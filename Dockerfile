@@ -10,6 +10,8 @@ RUN apt-get install -y vim curl nginx php5-fpm php5-mysql mysql-server daemontoo
 RUN mkdir /var/www
 RUN curl -sL http://wordpress.org/latest.tar.gz | tar xzC /var/www
 
+RUN chmod -R 777 /var/www/wordpress/wp-content/
+
 RUN echo "[global]\ndaemonize = no" > /etc/php5/fpm/pool.d/daemonize.conf
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 
