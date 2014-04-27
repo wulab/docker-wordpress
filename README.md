@@ -3,17 +3,23 @@ docker-wordpress
 
 Simple Dockerfile to run Wordpress inside a Docker container.
 
-Build
+Usage
 -----
 
-    docker build -t ubermuda/wordpress .
+Build the image:
+
+    docker build -t ubermuda/docker-wordpress .
+
+Or just pull the trusted build:
+
+    docker pull ubermuda/docker-wordpress
 
 Run
 ---
 
-    docker run -d -P --name wordpress ubermuda/wordpress
+    docker run -d -P --name wordpress ubermuda/docker-wordpress
 
-    
+
 Configure nginx as a reverse proxy
 ----------------------------------
 
