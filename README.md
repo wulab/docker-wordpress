@@ -41,8 +41,8 @@ Any way you chose, you can now use your newly created volumes in the wordpress c
         --volumes-from wordpress-data \
         ubermuda/docker-wordpress
 
-Configure nginx as a reverse proxy on our host
-----------------------------------------------
+Configure nginx as a reverse proxy
+----------------------------------
 
 Retrieve your container's port:
 
