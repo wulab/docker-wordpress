@@ -1,7 +1,7 @@
 docker-wordpress
 ================
 
-Simple Dockerfile to run [Wordpress](http://wordpress.com/) inside a Docker container.
+Simple Dockerfile to run [Wordpress](http://wordpress.com/) inside a [Docker](http://docker.io) container.
 
 Usage
 -----
