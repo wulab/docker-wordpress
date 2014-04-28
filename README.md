@@ -48,11 +48,11 @@ Retrieve your container's port:
 
     docker port wordpress 80
 
-Use this configuration in nginx:
+Use this configuration in nginx, changing `{{ port }}` and `{{ server_name }}` accordingly:
 
     server {
             listen  80;
-            server_name {{ your_hostname }};
+            server_name {{ server_name }};
             location / {
                 proxy_pass http://127.0.0.1:{{ port }}/;
                 proxy_redirect     off;
