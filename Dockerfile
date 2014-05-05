@@ -1,6 +1,4 @@
-FROM stackbrew/ubuntu:saucy
-
-MAINTAINER geoffrey.bachelet@gmail.com
+FROM debian
 
 ENV DEBIAN_FRONTEND noninteractive
 
